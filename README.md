@@ -9,7 +9,7 @@ Firstly, we need to make sure you have python3 and pip3 already installed on you
 
 1) Right click on <a href="https://bootstrap.pypa.io/get-pip.py" download>this link</a> and `save link as` (keep it as get-pip.py)
 2) Open your command prompt on windows as administrator
-3) Use the cd command followed by a folder name to navigate to the location of the get-pip.py file. (e.g. cd Downloads/)
+3) Use the cd command followed by a folder name to navigate to the location of the get-pip.py file. (e.g. cd C:Users/{your computer username}/Downloads/)
 4) Type "python3 get-pip.py" and wait for pip to install. After installation, check whether its installed type "pip3 --version"
 5) Type in these commands in any order, making sure there are no errors
 
