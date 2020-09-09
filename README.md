@@ -20,8 +20,8 @@ python3 -m pip install opencv-python
 python3 -m pip install discord
 ```
 
-7) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/archive/amongusbot.zip" download>here</a> and unzip it
-6) Now, watch this tutorial to finish this one time setup.
+4) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/archive/amongusbot.zip" download>here</a> and unzip it
+5) Now, watch this tutorial to finish this one time setup.
 
 
 [![IMAGE ALT TEXT](https://i.imgur.com/VgEd7qa.jpg)](https://www.youtube.com/watch?v=TrBBLbwmQic "AMONG US Discord Mute Bot [Download and Setup Tutorial]")
