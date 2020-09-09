@@ -8,7 +8,7 @@ Please bare with the setup of this process, it will take a moment so make sure t
 Firstly, we need to make sure you have python3 and pip3 already installed on your windows machine
 
 1) Open your command prompt on windows as administrator
-2) Type "python3", if you don't have it installed, Microsoft Store will open automatically and you can download it from there. 
+2) Type "python3", if you don't have it installed, Microsoft Store will open automatically and you can download it from there. If you do have it installed, type "quit()" to quit from the python environment and carry on
 3) Copy and paste the text below into your command prompt and wait for them all to install
 
 ``` 
