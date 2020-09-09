@@ -5,7 +5,7 @@
 # -------------------------------------------------
 
 import os
-os.system("clear")
+os.system("cls")
 print("\n[*] Warming up engine...\n\n")
 print("[*] A chrome window will open now...\n[*] Enter your discord credentials in the window before we start")
 from modules import module_grabscreen
