@@ -9,7 +9,7 @@
 # -------------------------------------------------
 
 
-chrome_driver_path = "./chromedriver"
+chrome_driver_path = "./chromedriver.exe"
 # To get this key go to https://discord.com/developers/applications/
 # Click on bot
 # Copy token
