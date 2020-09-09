@@ -6,7 +6,7 @@
 # -------------------------------------------------
 
 import os
-os.system("clear")
+os.system("cls")
 print("[*] Loading...")
 
 import discord #python3 -m pip install -U discord.py[voice]
