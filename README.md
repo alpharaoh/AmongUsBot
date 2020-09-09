@@ -7,7 +7,7 @@ This is an Among Us Discord bot that auto mutes players in certain situations, w
 Please bare with the setup of this process, it will take a moment so make sure to follow each step carefully. <br />
 Firstly, we need to make sure you have python3 and pip3 already installed on your windows machine
 
-1) Right click on <a href="https://bootstrap.pypa.io/get-pip.py" download>this link</a> and save this file (get-pip.py)
+1) Right click on <a href="https://bootstrap.pypa.io/get-pip.py" download>this link</a> and save this file (keep it as get-pip.py)
 2) Open your command prompt on windows as administrator
 3) Use the cd command followed by a folder name to navigate to the location of the get-pip.py file. (e.g. cd Downloads/)
 4) Type "python3 get-pip.py" and wait for pip to install. After installation, check whether its installed type "pip3 --version"
