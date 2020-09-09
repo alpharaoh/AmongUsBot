@@ -13,8 +13,8 @@ chrome_driver_path = "./chromedriver"
 # To get this key go to https://discord.com/developers/applications/
 # Click on bot
 # Copy token
-discord_bot_token = "NzUzMjgzODQ5NTIxMjAxMzAy.X1j8QQ.oF8HEro5wRC1lBe0EH9U4FFPKd0"
-discord_channel = "https://discord.com/channels/753283781980323901/753283782425051269"
+discord_bot_token = "*"
+discord_channel = *""
 
 
 # -------------------------------------------------
