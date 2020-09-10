@@ -28,3 +28,5 @@ python3 -m pip install discord
 
 
 [![IMAGE ALT TEXT](https://i.imgur.com/VgEd7qa.jpg)](https://www.youtube.com/watch?v=TrBBLbwmQic "AMONG US Discord Mute Bot [Download and Setup Tutorial]")
+
+Note: I am aware of the bug that doesn't let you mute yourself during rounds (If you died). Working on a fix.
