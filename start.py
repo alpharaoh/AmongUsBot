@@ -15,12 +15,7 @@ from threading import Thread
 class start_engine:
     def __init__(self, xResolution: int, yResolution:int):
         self.x, self.y = xResolution, yResolution
-
-        #thread0 = Thread(target = self.run_bot)
-        thread1 = Thread(target = self.run_main)  
-
-        #thread0.start()
-        thread1.start()
+        self.run_main()
 
     def grabEndingScreen(self):
         module_grabscreen.grabEndingScreen(self.x, self.y)
