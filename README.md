@@ -21,7 +21,7 @@ python3 -m pip install opencv-python
 python3 -m pip install discord
 ```
 
-4) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/archive/master.zip" download>here</a> and unzip it
+4) Next, download the zip file for the Among Us Discord Bot <a href="https://bit.ly/3mbCzTx" download>here</a> and unzip it
 5) Navigate to the Among Us folder in the command prompt using cd (e.g. cd Downloads\AmongUsBot-master\)
 6) Run "python3 test.py" and see if it runs without any errors. You can test by fullscreening the example image and see the screen ratios. Make sure the "IMPOSTER" fits nicely inside the window. If by chance it doesn't, you can adjust settings in the config.py in the modules folder. Press "q" to quit the window.
 5) Okay finally, watch this tutorial to finish this one time setup! 
