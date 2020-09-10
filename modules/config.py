@@ -16,6 +16,14 @@ chrome_driver_path = "./chromedriver.exe"
 discord_bot_token = "*"
 discord_channel = "*"
 
+screen_resolution = "1920x1080"
+adjust_x = 0 # adjust x by pixels. e.g. 3 = 3 pixels right, -2 = 2 pixles left
+adjust_y = 0 # adjust y by pixels. e.g. 2 = 2 pixels up, -20 = 20 pixles down
+time_delay = 0 # adjust time delay. 1 = one second more delay, -0.5 = 0.5 seconds less time
+
+# time_delay is added or taken away from the delay set between when the screen 
+# shows imposter, crewmate, or vote ended to when the round starts
+
 # -------------------------------------------------
 
 
