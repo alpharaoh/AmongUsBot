@@ -1,4 +1,4 @@
-# Among Us Discord Bot
+# Among Us Discord Bot (beta)
 
 This is an Among Us Discord bot that auto mutes players in certain situations, without *anyone in the game needing to mute manually*. This will make Among Us way more intense and doesn't break the immersion of the game having to mute all the time.
 
