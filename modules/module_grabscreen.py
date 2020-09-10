@@ -35,7 +35,7 @@ def grabDiscussionTitle(xResolution: int, yResolution: int):
         module_process.processDiscussion(frame)
 
 def grabEndingScreen(xResolution: int, yResolution: int):
-    settings = {'top': int(0.1 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)} 
+    settings = {'top': int(0.065 * yResolution) + adjust_y, 'left':int(xResolution * 0.22) + adjust_x, 'width':int(xResolution * 0.5), 'height':int(0.13 * yResolution)} 
 
     sct = mss()
 
