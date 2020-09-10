@@ -11,9 +11,10 @@ from PIL import Image # python3 -m pip install Pillow
 import numpy as np
 import time
 from modules import module_process
+from modules.config import *
 
 def grabDiscussionTitle(xResolution: int, yResolution: int):
-    settings = {'top': yResolution*0.1, 'left': xResolution*0.415, 'width': xResolution*0.63, 'height': yResolution*0.2} 
+    settings = {'top': int(0.1 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)} 
 
     sct = mss()
 
@@ -33,7 +34,7 @@ def grabDiscussionTitle(xResolution: int, yResolution: int):
         module_process.processDiscussion(frame)
 
 def grabEndingScreen(xResolution: int, yResolution: int):
-    settings = {'top': yResolution*0.1, 'left': xResolution*0.25, 'width': xResolution*1.1, 'height': yResolution*0.35} 
+    settings = {'top': int(0.1 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)} 
 
     sct = mss()
 
