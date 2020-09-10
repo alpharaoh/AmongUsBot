@@ -19,7 +19,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 def processDiscussion(image: complex):
     delay = 7 #Delay between voting ends and round starting
-    discussion = {"?","who","imposter?","iniposior?","inijposior?","impostor?"}
+    discussion = {"?","who",'whos',"imposter?","iniposior?","inijposior?","impostor?","inoster?","tnrpester?","tnsester?","inraostor?","inaoster?","tnsoster?","tnpester?",'hnnsester?'}
     voting = {"voting", "results","result","vetting","vartine"}
 
     raw_output = pytesseract.image_to_string(image)
