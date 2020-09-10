@@ -9,6 +9,7 @@
 from modules import module_sendcommand
 web = module_sendcommand.web() # Python will initalise this object when this when program starts
 
+from modules.config import *
 from PIL import Image
 import pytesseract #pip3 install pytesseract
 import os
@@ -16,7 +17,7 @@ import time
 
 def processDiscussion(image: complex):
     delay = 7 #Delay between voting ends and round starting
-    discussion = {"?","who","is","the","imposter?","iniposior?","inijposior?","impostor?"}
+    discussion = {"?","who","imposter?","iniposior?","inijposior?","impostor?"}
     voting = {"voting", "results","result","vetting","vartine"}
 
     raw_output = pytesseract.image_to_string(image)
@@ -30,7 +31,7 @@ def processDiscussion(image: complex):
     elif len(out.intersection(voting)) != 0: #if one of the keywords for ended voting is present
         print("VOTING ENDED [MUTING SOON]")
 
-        time.sleep(delay)
+        time.sleep(delay + time_delay)
         web.mute() #mute
 
 def processEnding(image: complex):
@@ -55,13 +56,13 @@ def processEnding(image: complex):
     elif len(out.intersection(crewmate)) != 0: #if one of the keywords for crewmate is present
         print("YOU GOT CREWMATE [MUTING SOON]")
 
-        time.sleep(delay)
+        time.sleep(delay + time_delay)
         web.mute() #mute
 
     elif len(out.intersection(imposter)) != 0: #if one of the keywords for imposter is present
         print("YOU GOT IMPOSTER [MUTING SOON]")
 
-        time.sleep(delay)
+        time.sleep(delay + time_delay)
         web.mute() #mute
     else:
         pass
