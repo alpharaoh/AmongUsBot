@@ -22,7 +22,7 @@ python3 -m pip install discord
 ```
 
 4) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/releases/download/v01/AmongUsBot.zip" download>here</a> and unzip it
-5) Double click test.py and see if it runs without any errors. You can test by fullscreening the example image and see the screen ratios. Make sure the "IMPOSTER" fits nicely inside the window. If by chance it doesn't, you can adjust settings in the config.py in the modules folder.
+5) Double click test.py and see if it runs without any errors. You can test by fullscreening the example image and see the screen ratios. Make sure the "IMPOSTER" fits nicely inside the window. If by chance it doesn't, you can adjust settings in the config.py in the modules folder. Press "q" to quit the window.
 5) Okay finally, watch this tutorial to finish this one time setup! 
 
 
