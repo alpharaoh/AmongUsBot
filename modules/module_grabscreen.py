@@ -14,7 +14,8 @@ from modules import module_process
 from modules.config import *
 
 def grabDiscussionTitle(xResolution: int, yResolution: int):
-    settings = {'top': int(0.1 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)} 
+    
+    settings = {'top': int(0.08 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)}
 
     sct = mss()
 
