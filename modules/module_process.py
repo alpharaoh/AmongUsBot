@@ -24,6 +24,9 @@ def processDiscussion(image: complex):
 
     raw_output = pytesseract.image_to_string(image)
 
+    if debug_mode:
+        print(raw_output.strip().lower())
+    
     out = set(raw_output.strip().lower().split(" "))
 
     if len(out.intersection(discussion)) != 0: #if one of the keywords for discussion time is present
@@ -40,11 +43,14 @@ def processEnding(image: complex):
     delay = 4 #Delay between getting role and game starting
     defeat = {"defeat","deteat"}
     victory = {"victory","vicory","viton"}
-    imposter = {"imposter","impostor"}
+    imposter = {"imposter","impostor","tmonetor"}
     crewmate = {"crewmate"}
 
     raw_output = pytesseract.image_to_string(image)
 
+    if debug_mode:
+        print(raw_output.strip().lower())
+    
     out = set(raw_output.strip().lower().split(" "))
 
     if len(out.intersection(defeat)) != 0: #if one of the keywords for defeat is present
