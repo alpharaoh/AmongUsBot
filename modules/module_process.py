@@ -15,6 +15,8 @@ import pytesseract #pip3 install pytesseract
 import os
 import time
 
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
 def processDiscussion(image: complex):
     delay = 7 #Delay between voting ends and round starting
     discussion = {"?","who","imposter?","iniposior?","inijposior?","impostor?"}
