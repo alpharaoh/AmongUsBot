@@ -21,7 +21,7 @@ python3 -m pip install opencv-python
 python3 -m pip install discord
 ```
 
-4) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/archive/amongusbot.zip" download>here</a> and unzip it
+4) Next, download the zip file for the Among Us Discord Bot <a href="https://github.com/alpharaoh/AmongUsBot/releases/download/v01/AmongUsBot.zip" download>here</a> and unzip it
 5) Now, watch this tutorial to finish this one time setup.
 
 
