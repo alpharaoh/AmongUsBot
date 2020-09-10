@@ -24,7 +24,9 @@ time_delay = 0 # adjust time delay. 1 = one second more delay, -0.5 = 0.5 second
 # time_delay is added or taken away from the delay set between when the screen 
 # shows imposter, crewmate, or vote ended to when the round starts
 
-debug_mode = False
+debug_mode = False #Shows parsed output coming from image to text algorithm
+
+
 # -------------------------------------------------
 
 
