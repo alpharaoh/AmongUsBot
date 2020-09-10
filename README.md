@@ -2,6 +2,9 @@
 
 This is an Among Us Discord bot that auto mutes and unmutes players in certain situations, without *anyone in the game needing to mute manually*. This will make Among Us way more intense and doesn't break the immersion of the game having to mute all the time.
 
+Note: I am aware of the bug that doesn't let you mute yourself during rounds (If you died). Working on a fix.<br />
+Note: I have an idea and I'm working on a way to implement this on phones
+
 ## Installation PLEASE READ BEFORE DOING ANYTHING
 
 Please bare with the setup of this process, it will take a moment so make sure to follow each step carefully. <br />
@@ -28,6 +31,3 @@ python3 -m pip install discord
 
 
 [![IMAGE ALT TEXT](https://i.imgur.com/VgEd7qa.jpg)](https://www.youtube.com/watch?v=TrBBLbwmQic "AMONG US Discord Mute Bot [Download and Setup Tutorial]")
-
-Note: I am aware of the bug that doesn't let you mute yourself during rounds (If you died). Working on a fix.<br />
-Note: I have an idea and I'm working on a way to implement this on phones
