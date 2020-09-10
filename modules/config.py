@@ -14,8 +14,7 @@ chrome_driver_path = "./chromedriver.exe"
 # Click on bot
 # Copy token
 discord_bot_token = "*"
-discord_channel = *""
-
+discord_channel = "*"
 
 # -------------------------------------------------
 
