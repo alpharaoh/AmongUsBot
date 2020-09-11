@@ -23,20 +23,22 @@ adjust_y = 0 # adjust y by pixels. e.g. 2 = 2 pixels up, -20 = 20 pixles down
 # These scalars should only be adjusted if text isn't being correctly identified by start.py,
 # or if you are debugging test.py to find the right fit. These operate as multipliers for the current resolution,
 # so if you are operating at a non 1080p resolution, you will likely need to adjust these (use test.py and sample images)
-discuss_offset_scalars = "0.08x0.18" # top x left
-discuss_dimension_scalars = "0.7x0.25" # width x height
-ending_offset_scalars = "0.065x0.22" # top x left
-ending_dimension_scalars = "0.5x0.13" # width x height
+ending_offset_scalars = "0.08x0.18" # top x left
+ending_dimension_scalars = "0.7x0.25" # width x height
+discuss_offset_scalars = "0.065x0.22" # top x left
+discuss_dimension_scalars = "0.5x0.13" # width x height
 
 time_delay = 0 # adjust time delay. 1 = one second more delay, -0.5 = 0.5 seconds less time
 
 # time_delay is added or taken away from the delay set between when the screen 
 # shows imposter, crewmate, or vote ended to when the round starts
 
-debug_mode = False #Shows parsed output coming from image to text algorithm
+debug_mode = False #Shows parsed output coming from image to text algorithm (enable for test.py)
 
-test_window_type = "ending" # use "ending" or "discuss" to identify what window type test.py will test with
-# test_window_type = "discuss"
+debug_disable_discord = False # Disable Discord hooks when testing the OCR and image fit (enable for test.py)
+
+#test_window_type = "ending" # use "ending" or "discuss" to identify what window type test.py will test with
+test_window_type = "discuss"
 
 # -------------------------------------------------
 
