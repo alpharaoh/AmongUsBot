@@ -1,0 +1,6 @@
+pytesseract
+selenium
+Pillow
+mss
+opencv-python
+discord
