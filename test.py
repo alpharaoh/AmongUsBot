@@ -8,7 +8,18 @@ from modules.config import *
 
 x, y = int(screen_resolution.split("x")[0]), int(screen_resolution.split("x")[1])
 
-mon = {'top': int(0.1*y) + adjust_y, 'left':int(x*0.18) + adjust_x, 'width':int(x*0.7), 'height':int(0.25*y)}
+if (test_window_type == "discuss"):
+    top, left = float(discuss_offset_scalars.split("x")[0]), float(discuss_offset_scalars.split("x")[1])
+    width, height = float(discuss_dimension_scalars.split("x")[0]), float(discuss_dimension_scalars.split("x")[1])
+elif test_window_type == "ending":
+    top, left = float(ending_offset_scalars.split("x")[0]), float(ending_offset_scalars.split("x")[1])
+    width, height = float(ending_dimension_scalars.split("x")[0]), float(ending_dimension_scalars.split("x")[1])
+else:
+    print("Invalid test_window_type specified")
+    exit
+    
+
+mon = {'top': int(top*y) + adjust_y, 'left':int(x*left) + adjust_x, 'width':int(x*width), 'height':int(height*y)}
 
 sct = mss()
 

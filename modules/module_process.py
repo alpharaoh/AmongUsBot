@@ -7,7 +7,7 @@
 # -------------------------------------------------
 
 from modules import module_sendcommand
-web = module_sendcommand.web() # Python will initalise this object when this when program starts
+# web = module_sendcommand.web() # Python will initalise this object when this when program starts
 
 from modules.config import *
 from PIL import Image

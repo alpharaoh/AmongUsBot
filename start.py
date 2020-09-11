@@ -9,6 +9,7 @@ os.system("cls")
 print("\n[*] Warming up engine...\n\n")
 print("[*] A chrome window will open now...\n[*] Enter your discord credentials in the window before we start")
 from modules import module_grabscreen
+from modules.config import screen_resolution
 
 from threading import Thread
 
@@ -30,5 +31,8 @@ class start_engine:
         thread2.start()
         thread3.start()
 
+# Use the x and y resolutions from config.py
+x, y = int(screen_resolution.split("x")[0]), int(screen_resolution.split("x")[1])
+
 if __name__ == "__main__":
-    start = start_engine(1280, 720) #Please leave these values alone
+    start = start_engine(x, y)

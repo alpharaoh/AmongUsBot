@@ -13,9 +13,15 @@ import time
 from modules import module_process
 from modules.config import *
 
+discuss_top, discuss_left = float(discuss_offset_scalars.split("x")[0]), float(discuss_offset_scalars.split("x")[1])
+discuss_width, discuss_height = float(discuss_dimension_scalars.split("x")[0]), float(discuss_dimension_scalars.split("x")[1])
+
+ending_top, ending_left = float(ending_offset_scalars.split("x")[0]), float(ending_offset_scalars.split("x")[1])
+ending_width, ending_height = float(ending_dimension_scalars.split("x")[0]), float(ending_dimension_scalars.split("x")[1])
+
 def grabDiscussionTitle(xResolution: int, yResolution: int):
     
-    settings = {'top': int(0.08 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)}
+    settings = {'top': int(discuss_top * yResolution) + adjust_y, 'left':int(xResolution * discuss_left) + adjust_x, 'width':int(xResolution * discuss_width), 'height':int(discuss_height * yResolution)}
 
     sct = mss()
 
@@ -35,7 +41,7 @@ def grabDiscussionTitle(xResolution: int, yResolution: int):
         module_process.processDiscussion(frame)
 
 def grabEndingScreen(xResolution: int, yResolution: int):
-    settings = {'top': int(0.065 * yResolution) + adjust_y, 'left':int(xResolution * 0.22) + adjust_x, 'width':int(xResolution * 0.5), 'height':int(0.13 * yResolution)} 
+    settings = {'top': int(ending_top * yResolution) + adjust_y, 'left':int(xResolution * ending_left) + adjust_x, 'width':int(xResolution * ending_width), 'height':int(ending_height * yResolution)} 
 
     sct = mss()
 
