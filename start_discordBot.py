@@ -36,7 +36,7 @@ bot = commands.Bot(command_prefix = ".")
 #         self._set_response()
 
 @bot.event
-async def on_ready(server_class=HTTPServer, handler_class=handleRequest):
+async def on_ready():
     print("[*] Bot is ready!\n\n[*] Why not join our discord if you have any issues, ideas, \nor for early access to new updates and features!\nhttps://discord.gg/PVfewrM")
     
     # server_address = ('', 8000)
