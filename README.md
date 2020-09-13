@@ -1,6 +1,8 @@
 # Among Us Discord Bot (beta)
 
 Join our discord server if you have any ideas, issues, or want early access to new updates and features! https://discord.gg/PVfewrM
+Check out https://github.com/denverquane/amongusdiscord !
+
 
 _I AM AWARE OF THE COMMON ISSUES PEOPLE ARE HAVING AND I AM WORKING ON AN UPDATE. PLEASE BARE WITH ME!_
 
