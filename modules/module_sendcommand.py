@@ -22,11 +22,11 @@ class web:
         self.driver = webdriver.Chrome(path)
         self.driver.get(self.site)
 
-        self.xPath = "//div[@class='markup-2BOw-j slateTextArea-1Mkdgw fontSize16Padding-3Wk7zP']"
+        self.xPath = "//div[@class='markup-2BOw-j slateTextArea-1Mkdgw fontSize16Padding-3Wk7zP']" #Find chatbox for discord
 
         try:
-        #Wait 100s for user to login to discord 
-            WebDriverWait(self.driver, 100).until(
+        #Wait 120s for user to login to discord or else quit program
+            WebDriverWait(self.driver, 120).until(
                         EC.presence_of_element_located((By.XPATH, self.xPath)), message='Sorry, you took too long.')
             print("\n[*] Starting engine... \n[*] This may take a moment...\n")
 
@@ -34,6 +34,15 @@ class web:
             print(e)
             exit()
     
+    def unmute_and_clear(self):
+        #When the game ends
+        if self.muted == False:
+            pass
+        else:
+            text_box = self.driver.find_element_by_xpath(self.xPath)
+            text_box.send_keys(".unmute_and_clear" + Keys.ENTER) #This unmutes and clears the list of people that died
+            self.muted = False
+
     def mute(self):
         if self.muted == True:
             pass
@@ -49,4 +58,3 @@ class web:
             text_box = self.driver.find_element_by_xpath(self.xPath)
             text_box.send_keys(".unmute" + Keys.ENTER)
             self.muted = False
-
