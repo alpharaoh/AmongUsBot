@@ -13,46 +13,51 @@ import time
 from modules import module_process
 from modules.config import *
 
-def grabDiscussionTitle(xResolution: int, yResolution: int):
-    
-    settings = {'top': int(0.08 * yResolution) + adjust_y, 'left':int(xResolution * 0.18) + adjust_x, 'width':int(xResolution * 0.7), 'height':int(0.25 * yResolution)}
+def returnFrame(settings: set, sct):
+    #Take image of screen
+    sct_img = sct.grab(settings)
+    img = Image.frombytes('RGB', (sct_img.size.width, sct_img.size.height), sct_img.rgb)
+    frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
 
-    sct = mss()
+    return frame
+
+def grabScreen(xResolution: int, yResolution: int):
+    settings = {"top": int(0.08 * yResolution) + adjust_y, "left":int(xResolution * 0.18) + adjust_x, "width":int(xResolution * 0.7), "height":int(0.25 * yResolution), "mon": monitor_number}
 
     first_time = True
 
-    while True:
-        #Take image of screen
-        sct_img = sct.grab(settings)
-        img = Image.frombytes('RGB', (sct_img.size.width, sct_img.size.height), sct_img.rgb)
-        frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+    x_crop = int(xResolution * 0.18)
+    y_crop = int(yResolution * 0.08)
 
-        if first_time:
-            print("Ready.\nYou can play now.\n")
-            first_time = False
+    with mss() as sct:
+        while True:
+            frame = returnFrame(settings, sct)
+            
+            try:
+                #Crop image to fit only "voting ended" and "whos the imposter?"
+                cropped_frame = frame[10:(y_crop + y_extend_crop), int(x_crop/2 - x_extend_crop + 80):-int(x_crop/2 + x_extend_crop)].copy()
+            
+                if debug_mode:
+                    cv2.imshow('Test', np.array(frame)) #output screen, for testing only
+                    cv2.imshow('Test Cropped', np.array(cropped_frame)) #output screen, for testing only
 
-        #Process image
-        module_process.processDiscussion(frame)
+            except Exception as e:
+                print(f"{e}\nLooks like your x_extend_crop or y_extend_crop values are way too high")
+                exit()
 
-def grabEndingScreen(xResolution: int, yResolution: int):
-    settings = {'top': int(0.065 * yResolution) + adjust_y, 'left':int(xResolution * 0.22) + adjust_x, 'width':int(xResolution * 0.5), 'height':int(0.13 * yResolution)} 
+            if first_time:
+                print("Ready.\nYou can play now.\n")
+                first_time = False
 
-    sct = mss()
+            #Process image
+            found = module_process.processDiscussion(cropped_frame)
 
-    while True:
-        #Take image of screen
-        sct_img = sct.grab(settings)
-        img = Image.frombytes('RGB', (sct_img.size.width, sct_img.size.height), sct_img.rgb)
-        frame = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+            if found == False: #If discussion or voting ends found, you dont need to process ending
+                found = module_process.processEnding(frame)
 
-        # time.sleep(1)
-        # cv2.imshow('Test', np.array(frame)) #output screen, for testing only
-
-        module_process.processEnding(frame)
-
-        # if cv2.waitKey(25) & 0xFF == ord('q'):
-        #     cv2.destroyAllWindows()
-        #     break
+            if cv2.waitKey(25) & 0xFF == ord('q'): #Press Q on debug windows to exit
+                cv2.destroyAllWindows()
+                break
 
 if __name__ == "__main__":
     print("Please run start.py: ")
