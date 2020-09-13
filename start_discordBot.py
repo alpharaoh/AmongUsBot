@@ -22,35 +22,35 @@ from modules.config import *
 
 bot = commands.Bot(command_prefix = ".")
 
-class handleRequest(BaseHTTPRequestHandler):
-    def _set_response(self):
-        self.send_response(200)
-        self.send_header('Content-type', 'text/html')
-        self.end_headers()
+# class handleRequest(BaseHTTPRequestHandler):
+#     def _set_response(self):
+#         self.send_response(200)
+#         self.send_header('Content-type', 'text/html')
+#         self.end_headers()
 
-    def do_GET(self):
-        if str(self.path) == "/mute":
-            print("[*] Muting")
-            #Do stuff
+#     def do_GET(self):
+#         if str(self.path) == "/mute":
+#             print("[*] Muting")
+#             #Do stuff
 
-        self._set_response()
+#         self._set_response()
 
 @bot.event
 async def on_ready(server_class=HTTPServer, handler_class=handleRequest):
     print("[*] Bot is ready!\n\n[*] Why not join our discord if you have any issues, ideas, \nor for early access to new updates and features!\nhttps://discord.gg/PVfewrM")
     
-    server_address = ('', 8000)
-    httpd = server_class(server_address, handler_class)
+    # server_address = ('', 8000)
+    # httpd = server_class(server_address, handler_class)
 
-    print("\n[*] Listening for requests...")
+    # print("\n[*] Listening for requests...")
 
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        pass
+    # try:
+    #     httpd.serve_forever()
+    # except KeyboardInterrupt:
+    #     pass
 
-    httpd.server_close()
-    print("\n[*] Stopping...")
+    # httpd.server_close()
+    # print("\n[*] Stopping...")
 
 global ghostmode
 ghostmode = False
@@ -224,7 +224,7 @@ NOTE: If you don't want everyone to be muted in discussion but during rounds you
 
 .unmute_and_clear           | Unmutes everyone including the dead (This is used when you win or lose!)
 
-.ghostmode                  | NOT WORKING - Mute mics AND headphones for everyone between rounds except the dead (so they can talk with each other)
+.ghostmode                  | NOTE WORKING - Mute mics AND headphones for everyone between rounds except the dead (so they can talk with each other)
 
 ```"""
     await ctx.send(help_message)
