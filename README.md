@@ -4,8 +4,6 @@ Join our discord server if you have any ideas, issues, or want early access to n
 Check out https://github.com/denverquane/amongusdiscord !
 
 
-_I AM AWARE OF THE COMMON ISSUES PEOPLE ARE HAVING AND I AM WORKING ON AN UPDATE. PLEASE BARE WITH ME!_
-
 This is an Among Us Discord bot that auto mutes and unmutes players in certain situations, without *anyone in the game needing to mute manually*. This will make Among Us way more intense and doesn't break the immersion of the game having to mute all the time.
 
 Note: I am aware of the bug that doesn't let you mute yourself during rounds (If you died). Working on a fix.<br />
