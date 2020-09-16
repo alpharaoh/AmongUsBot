@@ -2,7 +2,7 @@
 
 Join our discord server if you have any ideas, issues, or want early access to new updates and features! https://discord.gg/PVfewrM<br />
 
-THIS IS CURRENTLY DISCONTINUED - Please check out https://github.com/denverquane/amongusdiscord !
+THIS IS CURRENTLY DISCONTINUED - Please check out https://github.com/denverquane/amongusdiscord and their discord https://discord.gg/arQEK3U !
 
 This is an Among Us Discord bot that auto mutes and unmutes players in certain situations, without *anyone in the game needing to mute manually*. This will make Among Us way more intense and doesn't break the immersion of the game having to mute all the time.
 
@@ -48,4 +48,4 @@ If you are getting a Discord SSL Certificate error, install this certificate: ht
 
 # Dev note
 
-Thanks for everyone that was interested in my project. Although I didn't expect it to blow up (and cause so much issues for people haha). Nonetheless thank you. This has spawned alot a discussion and some amazing people are brewing up a way better and intuitive bot that looks extrememly promising! Head over to our discord https://discord.gg/PVfewrM for more updates
+Thanks for everyone that was interested in my project. Although I didn't expect it to blow up (and cause so much issues for people haha). Nonetheless thank you. This has spawned alot a discussion and some amazing people over at https://discord.gg/arQEK3Uare are brewing up a way better and intuitive bot that looks extrememly promising!
