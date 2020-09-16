@@ -1,4 +1,4 @@
-# Among Us Discord Bot (beta)
+# Among Us Discord Bot
 
 Join our discord server if you have any ideas, issues, or want early access to new updates and features! https://discord.gg/PVfewrM<br />
 
