@@ -11,7 +11,7 @@ This is an Among Us Discord bot that auto mutes and unmutes players in certain s
 Please bare with the setup of this process, it will take a moment so make sure to follow each step carefully. <br />
 Note: make sure you have python3 and pip3 already installed on your windows machine
 
-1) Download the Among Us Bot [here] (https://bit.ly/3mbCzTx)
+1) Download the Among Us Bot [here](https://bit.ly/3mbCzTx)
 1) Download the dependancies - go to your command prompt, navigate to your folder where you downloaded the AmongUsBot using "cd" command (Check [this](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) if you are stuck on this step)
 2) Type this into your cmd and wait for the download to finish
 ``` 
