@@ -1,6 +1,6 @@
 pytesseract
-selenium
 Pillow
+Requests
 mss
 opencv-python
 discord

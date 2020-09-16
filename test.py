@@ -20,7 +20,7 @@ y_crop = int(y * 0.08)
 x_extend_crop = 150#pixels
 y_extend_crop = 50#pixels
 
-while 1:
+while True:
     sct_img = sct.grab(settings)
     img = Image.frombytes('RGB', (sct_img.size.width, sct_img.size.height), sct_img.rgb)
     img_bgr = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)

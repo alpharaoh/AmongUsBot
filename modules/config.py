@@ -11,13 +11,19 @@
 #IGNORE THIS
 #tesseractexe_location error: pytesseract.pytesseract.tesseract_cmd = r"C:\Users\USER\AppData\Local\Tesseract-OCR\tesseract.exe"
 
-
-chrome_driver_path = "./chromedriver.exe"
 # To get this key go to https://discord.com/developers/applications/
 # Click on bot
 # Copy token
 discord_bot_token = "*"
-discord_channel = "*"
+
+#Add keywords e.g. keyword_defeat = {"dafeatfa","deafeat;"}
+
+keyword_victory = {}
+keyword_defeat = {}
+keyword_imposter = {}
+keyword_crewmate = {}
+keyword_voting_ended = {}
+keyword_whos_imposter = {}
 
 screen_resolution = "1920x1080"
 
@@ -32,6 +38,9 @@ y_extend_crop = 50#pixels
 
 monitor_number = 1 
 
+address = "127.0.0.1" #Change to 0.0.0.0 or localhost if connection error
+port = 8080
+
 delay_start = 0 # adjust time delay from when you get imposter/crewmate till round start. 1 = one second more delay, -0.5 = 0.5 seconds less time
 delay_voting = 0 # adjust time delay for when voting is ended to when the round starts
 
@@ -39,8 +48,6 @@ delay_voting = 0 # adjust time delay for when voting is ended to when the round 
 # shows imposter, crewmate, or vote ended to when the round starts
 
 debug_mode = False #Shows parsed output coming from image to text algorithm
-debug_screen = 1 # 1 = shows what your program is seeing for screen grab of the keywords for 'defeat', 'victory', 'imposter', 'crewmate'
-                 # 2 = shows what your program is seeing for screen that grabs keywords of 'voting soon', 'whos the imposter?'
 
 # -------------------------------------------------
 
@@ -57,7 +64,6 @@ if __name__ == "__main__":
     try:
         import pytesseract # pip3 install pytesseract
         import threading 
-        import selenium #pip3 install selenium
         import numpy
         import time
         import PIL # python3 -m pip install Pillow
