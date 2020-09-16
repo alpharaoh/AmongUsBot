@@ -20,8 +20,8 @@ python3 -m pip install -r requirements.txt
 4) Navigate to the OAuth2 panel and in scopes, click bot. Then scroll down and choose "Mute members" and "Deafen members" as the permissions of the bot. Copy the link and paste it onto another tab and authorize this bot to your server
 6) Copy the bot token in the bot panel.
 7) Go to the config.py file and edit it. Change the discord_bot_token to your discord bot token e.g. (discord_bot_token = "XzUzMjgzODaddasfxMjAxMzAy.X1j8QQ.kGDZ54234123X2XQkQ_eUasdFSIzmI") and save it
-8) Run the start.bat file
-9) Now read the discord server setup
+8) Run the start.bat file and wait for the bot to be ready. The screengrabbing will also start so dont be alarmed.
+9) To complete the setup, read the text below
 
 # Set up discord server
 
