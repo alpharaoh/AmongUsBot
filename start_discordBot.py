@@ -29,9 +29,11 @@ async def help(ctx):
 
 .dead                       | Do this if you are dead, so you stay muted until you win or lose!
 
+.kill @DiscordP1 @DiscordP2 | Alternative to .dead 
+
 .ghostmode                  | Mute mics AND headphones for everyone between rounds except the dead (so they can talk with each other)
 
-.users                    | See current users in the hosts voice channel
+.users                      | See current users in the hosts voice channel
 
 # Python bot commands (you can also use this manually if you dont want to set up the python program!)
     
