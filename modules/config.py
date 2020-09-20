@@ -14,7 +14,8 @@
 # To get this key go to https://discord.com/developers/applications/
 # Click on bot
 # Copy token
-discord_bot_token = "*"
+discord_bot_token = "NzU3MTUxNzk5NDU4MjY3MjM2.X2cOkA.i0BnR0xJ6OrbylQ8A0LNsdCG-ys
+"
 
 #Add keywords e.g. keyword_defeat = {"dafeatfa","deafeat;"}
 
