@@ -7,9 +7,19 @@ from modules import module_grabscreen
 from modules.config import *    
 
 def startBot():
+    """
+    Start the application
+
+    Args:
+    """
     os.system("python3 ./start_discordBot.py")
 
 def startGrab():
+    """
+    Start the screen
+
+    Args:
+    """
     try:
         x, y = int(screen_resolution.split("x")[0]), int(screen_resolution.split("x")[1])
         module_grabscreen.grabScreen(x,y)

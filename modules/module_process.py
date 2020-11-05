@@ -19,6 +19,12 @@ import time
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def processDiscussion(image: complex) -> int:
+    """
+    Parse the image
+
+    Args:
+        image: (array): write your description
+    """
     #1 = Not found, 2 = Discussion found, 3 = Voting ended found
 
     discussion = {"?","impestoe","who",'whos',"wino","innoosttor?","imsoster?","inostor?","imposter?","inyoostor?","iniposior?","inijposior?","impostor?","inoster?","tnrpester?","tnsester?","inraostor?","inaoster?","tnsoster?","tnpester?",'hnnsester?'}
@@ -46,6 +52,12 @@ def processDiscussion(image: complex) -> int:
         return 1
 
 def processEnding(image: complex) -> bool:
+    """
+    Process the process
+
+    Args:
+        image: (array): write your description
+    """
     delay = 3.5 #Delay between getting role and game starting
 
     defeat = {"defeat","deteat","netrtorat","neffeat","netfeat","defeat\\n\\n"}
