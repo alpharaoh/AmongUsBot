@@ -15,6 +15,13 @@ from modules.config import *
 import requests
 
 def returnFrame(settings: set, sct) -> complex:
+    """
+    Convert a png image to a png image.
+
+    Args:
+        settings: (dict): write your description
+        sct: (todo): write your description
+    """
     #Take image of screen
     sct_img = sct.grab(settings)
     img = Image.frombytes('RGB', (sct_img.size.width, sct_img.size.height), sct_img.rgb)
@@ -23,6 +30,13 @@ def returnFrame(settings: set, sct) -> complex:
     return frame
 
 def grabScreen(xResolution: int, yResolution: int):
+    """
+    Takes a frame from a frame.
+
+    Args:
+        xResolution: (todo): write your description
+        yResolution: (todo): write your description
+    """
     keep_grabbing = False
 
     settings = {"top": int(0.08 * yResolution) + adjust_y, "left":int(xResolution * 0.18) + adjust_x, "width":int(xResolution * 0.7), "height":int(0.25 * yResolution), "mon": monitor_number}
